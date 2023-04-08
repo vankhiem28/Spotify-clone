@@ -11,7 +11,7 @@ import Button from "../Button";
 
 function Sidebar() {
   return (
-    <div className="w-[241px] bg-black pt-6 px-2 h-screen overflow-auto">
+    <div className="w-[241px] bg-black pt-6 px-2 overflow-auto sticky top-0 h-screen">
       <div className="px-4 mb-[18px] pb-2">
         <LogoIcon />
       </div>

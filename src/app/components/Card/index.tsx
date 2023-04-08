@@ -6,8 +6,8 @@ import { PlayIcon } from "~/app/assests/img";
 
 function Card() {
   return (
-    <div className="group p-4 bg-[#181818] mt-5 ml-5 rounded-md cursor-pointer hover:bg-[#282828] transition-all duration-300">
-      <div className="relative w-[176px] h-[176px] mb-4">
+    <div className="group p-4 bg-[#181818] rounded-md cursor-pointer hover:bg-[#282828] transition-all duration-300">
+      <div className="relative w-[176px] h-[176px]">
         <img
           className="rounded-md"
           src="https://i.scdn.co/image/ab67616d00001e02ef57183066d6cac0cabb85c6"
@@ -17,10 +17,10 @@ function Card() {
           <PlayIcon />
         </button>
       </div>
-      <h1 className="font-circular-sp text-base text-white font-bold w-44 whitespace-nowrap overflow-hidden text-ellipsis">
+      <h1 className="font-circular-sp text-base text-white whitespace-nowrap font-bold overflow-hidden text-ellipsis w-44">
         Dreamers [Music from the FIFA World Cup Qatar 2022 Official Soundtrack]
       </h1>
-      <div className="text-primary font-circular-sp text-sm font-normal ">
+      <div className="text-primary font-circular-sp text-sm font-normal">
         <a className="hover:underline" href="">
           Jung Kook
         </a>

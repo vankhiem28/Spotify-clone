@@ -4,7 +4,11 @@ interface PropsIcon {
   height?: string;
 }
 
-export const LogoIcon = ({ className, width = "131px", height = "40px" }: PropsIcon): JSX.Element => {
+export const LogoIcon = ({
+  className,
+  width = "131px",
+  height = "40px",
+}: PropsIcon): JSX.Element => {
   return (
     <svg viewBox="0 0 1134 340" className={className} width={width} height={height}>
       <title>Spotify</title>
@@ -16,9 +20,20 @@ export const LogoIcon = ({ className, width = "131px", height = "40px" }: PropsI
   );
 };
 
-export const HomeIcon = ({ className, width = "24px", height = "24px" }: PropsIcon): JSX.Element => {
+export const HomeIcon = ({
+  className,
+  width = "24px",
+  height = "24px",
+}: PropsIcon): JSX.Element => {
   return (
-    <svg role="img" height={width} width={height} aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
+    <svg
+      role="img"
+      height={width}
+      width={height}
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      data-encore-id="icon"
+    >
       <path
         className={`fill-current text-primary ${className}`}
         d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"
@@ -27,7 +42,11 @@ export const HomeIcon = ({ className, width = "24px", height = "24px" }: PropsIc
   );
 };
 
-export const SearchIcon = ({ className, width = "24px", height = "24px" }: PropsIcon): JSX.Element => {
+export const SearchIcon = ({
+  className,
+  width = "24px",
+  height = "24px",
+}: PropsIcon): JSX.Element => {
   return (
     <svg
       role="img"
@@ -45,7 +64,11 @@ export const SearchIcon = ({ className, width = "24px", height = "24px" }: Props
     </svg>
   );
 };
-export const LibaryIcon = ({ className, width = "24px", height = "24px" }: PropsIcon): JSX.Element => {
+export const LibaryIcon = ({
+  className,
+  width = "24px",
+  height = "24px",
+}: PropsIcon): JSX.Element => {
   return (
     <svg
       role="img"
@@ -63,7 +86,11 @@ export const LibaryIcon = ({ className, width = "24px", height = "24px" }: Props
     </svg>
   );
 };
-export const CreateIcon = ({ className, width = "12px", height = "12px" }: PropsIcon): JSX.Element => {
+export const CreateIcon = ({
+  className,
+  width = "12px",
+  height = "12px",
+}: PropsIcon): JSX.Element => {
   return (
     <svg
       role="img"
@@ -82,9 +109,20 @@ export const CreateIcon = ({ className, width = "12px", height = "12px" }: Props
   );
 };
 
-export const LikedIcon = ({ className, width = "12px", height = "12px" }: PropsIcon): JSX.Element => {
+export const LikedIcon = ({
+  className,
+  width = "12px",
+  height = "12px",
+}: PropsIcon): JSX.Element => {
   return (
-    <svg role="img" height={width} width={height} aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+    <svg
+      role="img"
+      height={width}
+      width={height}
+      aria-hidden="true"
+      viewBox="0 0 16 16"
+      data-encore-id="icon"
+    >
       <path
         className={`fill-current text-primary ${className}`}
         d="M15.724 4.22A4.313 4.313 0 0 0 12.192.814a4.269 4.269 0 0 0-3.622 1.13.837.837 0 0 1-1.14 0 4.272 4.272 0 0 0-6.21 5.855l5.916 7.05a1.128 1.128 0 0 0 1.727 0l5.916-7.05a4.228 4.228 0 0 0 .945-3.577z"
@@ -93,12 +131,67 @@ export const LikedIcon = ({ className, width = "12px", height = "12px" }: PropsI
   );
 };
 
-export const PlayIcon = ({ className, width = "24px", height = "24px" }: PropsIcon): JSX.Element => {
+export const PlayIcon = ({
+  className,
+  width = "24px",
+  height = "24px",
+}: PropsIcon): JSX.Element => {
   return (
-    <svg role="img" height={width} width={height} aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
+    <svg
+      role="img"
+      height={width}
+      width={height}
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      data-encore-id="icon"
+    >
       <path
         className={`fill-current text-black ${className}`}
         d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+      ></path>
+    </svg>
+  );
+};
+
+export const PrevIcon = ({
+  className,
+  width = "16px",
+  height = "16px",
+}: PropsIcon): JSX.Element => {
+  return (
+    <svg
+      role="img"
+      height={width}
+      width={height}
+      aria-hidden="true"
+      viewBox="0 0 16 16"
+      data-encore-id="icon"
+    >
+      <path
+        className={`fill-current text-black ${className}`}
+        d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+      ></path>
+    </svg>
+  );
+};
+
+export const NextIcon = ({
+  className,
+  width = "16px",
+  height = "16px",
+}: PropsIcon): JSX.Element => {
+  return (
+    <svg
+      role="img"
+      aria-hidden="true"
+      height={width}
+      width={height}
+      viewBox="0 0 16 16"
+      data-encore-id="icon"
+    >
+      <path
+        className={`fill-current text-black ${className}`}
+        d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
       ></path>
     </svg>
   );
